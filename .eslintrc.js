@@ -3,12 +3,12 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: ['standard', 'plugin:prettier/recomended'],
+  extends: ['standard'],
   overrides: [],
   plugins: ['prettier'],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  rules: { 'no-unused-vars': 'warn' },
+  rules: { 'no-unused-vars': 'warn', 'comma-dangle': 'off' },
 }

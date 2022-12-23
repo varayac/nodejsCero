@@ -67,6 +67,64 @@ const aboutMe = [
 console.log(aboutMe)
 ```
 
+### Modulo 3 - Estructuras de Control.
+
+Crea los siguientes archivos JS:
+
+- factorial-for.js -> Este archivo debe calcular el factorial de 10 utilizando un solo bucle for.
+
+_respuesta:_
+
+```javascript
+const num = 10
+let factorial = 1
+
+for (let i = num; i > 0; i--) {
+  factorial = factorial * i
+}
+
+console.log(`El factorial de ${num} es ${factorial}`)
+// 'El factorial de 10 es 3628800'
+```
+
+- factorial-while.js -> Este archivo debe calcular el factorial de 10 utilizando un bucle while.
+
+_respuesta:_
+
+```javascript
+let num = 10
+let factorial = 1
+
+while (num !== 0) {
+  factorial = factorial * num
+  num--
+}
+
+console.log(`El factorial de 10 es ${factorial}`)
+// 'El factorial de 10 es 3628800'
+```
+
+- factorial-break.js -> Este archivo debe calcular el factorial de 10 utilizando un bucle while, una bifurcación if y una sentencia break
+
+_respuesta:_
+
+```javascript
+let num = 10
+const num2 = num
+let factorial = 1
+
+while (num) {
+  factorial = factorial * num
+  num--
+
+  if (num < 1) {
+    console.log(`El factorial de ${num2} es ${factorial}`)
+    break
+  }
+}
+// 'El factorial de 10 es 3628800'
+```
+
 ---
 
 ⌨️ con ❤️ por [varayac](https://github.com/varayac) 😊

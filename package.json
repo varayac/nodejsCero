@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint --fix . --ext .js",
-    "check": "pretiter --check",
-    "format": "pretiter --write",
+    "check": "prettier --check",
+    "format": "prettier --write",
     "hello": "node ./1-introduccion-js/ejercico.js"
   },
   "keywords": [
