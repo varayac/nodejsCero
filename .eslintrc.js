@@ -14,6 +14,8 @@ module.exports = {
     'no-unused-vars': 'warn',
     'comma-dangle': 'off',
     'eol-last': 'warn',
+    'no-multiple-empty-lines': 'off',
+    camelcase: 'off',
     quotes: 'warn',
   },
 }

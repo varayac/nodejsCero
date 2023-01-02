@@ -11,8 +11,8 @@ Repositorio con respuesta a los ejercicios correspondientes al curso de JavaScri
 5. [Modulo 3 - Estructuras de control.](#modulo-3---estructuras-de-control)
 6. [Modulo 4 - Cadenas de texto.](#modulo-4---cadenas-de-texto)
 7. [Modulo 5 - Números en JS.](#modulo-5---números-en-js)
-8. [Modulo 6 - Listas. (pendiente)](#modulo-6---listas)
-   <br>
+8. [Modulo 6 - Listas.](#modulo-6---listas)
+9. [Modulo 7 - Sets y objetos.](#modulo-7---sets-y-objetos)
    <br>
 
 # Primeros Pasos
@@ -33,7 +33,6 @@ Descargue el repositorio, acceda y ejecute en consola:
 pnpm i
 ```
 
-<br>
 <br>
 
 # Respuestas de ejercicios
@@ -212,9 +211,58 @@ const compare = maxValueJsAddOne === maxValueJS // true
 
 ### Modulo 6 - Listas
 
-- 👷🏽‍♂️ _en desarrollo..._ n.n
+Crea un archivo JS que contenga las siguientes líneas
 
-<br>
+- Una variable que contenga la lista de la compra (mínimo 5 elementos)
+- Modifica la lista de la compra y añádele "Aceite de Girasol"
+- Vuelve a modificar la lista de la compra eliminando "Aceite de Girasol"
+- Una lista de tus 3 películas favoritas (objetos con propiedades: titulo, director, fecha)
+- Una nueva lista que contenga las películas posteriores al 1 de enero de 2010 (utilizando filter)
+- Una nueva lista que contenga los directores de la lista de películas original (utilizando map)
+- Una nueva lista que contenga los títulos de la lista de películas original (utilizando map)
+- Una nueva lista que concatene la lista de directores y la lista de los títulos (utilizando concat)
+- Una nueva lista que concatene la lista de directores y la lista de los títulos (utilizando el factor de propagación)
+
+_**Respuestas:**_
+
+```js
+const cardList = ['Jamon', 'Queso', 'Pan']
+cardList.push('Aceite de Girasol') // [ 'Jamon', 'Queso', 'Pan', 'Aceite de Girasol' ]
+cardList.pop('Aceite de Girasol') // ['Jamon', 'Queso', 'Pan']
+
+const moviesList = [
+  {
+    title: 'Batman the dark knight',
+    director: 'Christopher Nolan',
+    date: new Date('2008-6-18'),
+  },
+  {
+    title: 'Interstellar',
+    director: 'Christopher Nolan',
+    date: new Date('2014-9-26'),
+  },
+  {
+    title: 'Tenki no Ko',
+    director: 'Makoto Shinkai',
+    date: new Date('2019-6-19'),
+  },
+]
+const date2010 = new Date('2010-1-1').getTime()
+const getMovie = moviesList.filter(movie => movie.date.getTime() > date2010)
+// [ { title: 'Interstellar',... }, { title: 'Tenki no Ko',... } ]
+
+const getDirectors = moviesList.map(dr => dr.director) // [ 'Christopher Nolan', 'Christopher Nolan', 'Makoto Shinkai' ]
+const getTitle = moviesList.map(dr => dr.title) // [ 'Batman the dark knight', 'Interstellar', 'Tenki no Ko' ]
+const concatMovie = getDirectors.concat(getTitle) // [ Christopher Nolan', Christopher Nolan', ... ]
+const propagationList = [...getDirectors, ...getTitle] // [ Christopher Nolan', Christopher Nolan', ... ]
+```
+
+ <br>
+
+### Modulo 7 - Sets y Objetos
+
+- 👷🏽‍♂️ _en desarrollo..._ n.n
+  <br>
 
 ---
 
