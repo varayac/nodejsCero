@@ -276,6 +276,47 @@ familyNames.add('varayac', 'varayac') // Set(3) { 'Isabel Allende', 'Pablo Nerud
 familyNames.add('JavaScript') // Set(4) { 'Isabel Allende', 'Pablo Neruda', 'varayac', 'JavaScript' }
 ```
 
+2. Crea un archivo llamado objetos.js que contenga las siguientes líneas
+
+- Un objeto con tus datos personales (nombre, apellido, edad, altura, eresDesarrollador)
+- Una variable que obtenga tu edad a partir del objeto anterior
+- Una lista que contenga el objeto con tus datos personales y un nuevo objeto con los datos personales de tus dos mejores amig@s
+- Una nueva lista con los objetos de la lista anterior ordenados por edad, de mayor a menor
+
+_**Respuesta:**_
+
+```javascript
+const myPersonalData = {
+  name: 'John',
+  lname: 'Doe',
+  age: 32,
+  heigth: 1.74,
+  developer: true,
+}
+
+const myAge = myPersonalData.age // 32
+
+const meAndFriendsDataList = [
+  myPersonalData,
+  {
+    name: 'Mariom',
+    lname: 'Doe',
+    age: 36,
+    heigth: 1.77,
+    developer: true,
+  },
+  {
+    name: 'Nacho',
+    lname: 'Doe',
+    age: 27,
+    heigth: 1.82,
+    developer: false,
+  },
+]
+
+const orderByAge = meAndFriendsDataList.sort((a, b) => b.age - a.age) // ...36 ...32 ...27
+```
+
 <br>
 
 ### Modulo 8 - Funciones
