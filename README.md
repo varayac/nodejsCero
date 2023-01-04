@@ -343,7 +343,9 @@ const yearBirthday = birthday.getFullYear() // 1990
 - Abre la consola de desarrollador de Google Chrome (F12)
 - Pregunta al usuario cuál es su edad y almacénala en una variable llamada edad
 
-imagen aca...
+_**Respuesta:**_
+
+![console navigator](https://github.com/varayac/nodejsCero/blob/main/7-sets-objetos/img/userAge.png)
 
 <br>
 
