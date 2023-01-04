@@ -1,32 +1,3 @@
-
-// COMPARAR ALGUNOS ELEMENTOS some()
-const users = [
-  { id: 'u1', name: 'John Doe', age: 33 },
-  { id: 'u2', name: 'Travis Algo', age: 43 },
-  { id: 'u3', name: 'Richard Achfol', age: 54 },
-  { id: 'u4', name: 'El Viss', age: 32 },
-  { id: 'u5', name: 'Franco Coulum', age: 24 },
-  { id: 'u6', name: 'Tapis Cry', age: 13 },
-]
-
-const getTravis = users.some(user => user.name === 'Travis Algo')
-console.log(getTravis)
-
-// OBTENER UN ARRAY DE UN OBJETO ITERABLE (string)
-const str = 'Hola soy un Naruto'
-const strToArr = Array.from(str)
-console.log(strToArr)
-
-// OBTENER INDICES O KEYS de array
-const keys = strToArr.keys()
-console.log(keys)
-const arrKeys = Array.from(keys)
-console.log(arrKeys)
- */
-const cardList = ['Jamon', 'Queso', 'Pan']
-cardList.push('Aceite de Girasol') // [ 'Jamon', 'Queso', 'Pan', 'Aceite de Girasol' ]
-cardList.pop('Aceite de Girasol') // ['Jamon', 'Queso', 'Pan']
-
 const moviesList = [
   {
     title: 'Batman the dark knight',

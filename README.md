@@ -13,7 +13,8 @@ Repositorio con respuesta a los ejercicios correspondientes al curso de JavaScri
 7. [Modulo 5 - Números en JS.](#modulo-5---números-en-js)
 8. [Modulo 6 - Listas.](#modulo-6---listas)
 9. [Modulo 7 - Sets y objetos.](#modulo-7---sets-y-objetos)
-   <br>
+10. [Modulo 8 - Funciones.](#modulo-8---funciones)
+    <br>
 
 # Primeros Pasos
 
@@ -260,6 +261,24 @@ const propagationList = [...getDirectors, ...getTitle] // [ Christopher Nolan', 
  <br>
 
 ### Modulo 7 - Sets y Objetos
+
+1. Crea un archivo llamado conjuntos.js que contenga las siguientes líneas
+
+- Un nuevo Set con los nombres de tu familia
+- Modifica el Set original añadiendo tu nombre (duplicado) (debería darte lo mismo)
+- Modifica el Set original añadiendo el nombre "Javascript" (ya que empieza a formar parte de tu vida ;)
+
+_**Respuesta:**_
+
+```javascript
+const familyNames = new Set(['Isabel Allende', 'Pablo Neruda']) // Set(2) { 'Isabel Allende', 'Pablo Neruda' }
+familyNames.add('varayac', 'varayac') // Set(3) { 'Isabel Allende', 'Pablo Neruda', 'varayac', }
+familyNames.add('JavaScript') // Set(4) { 'Isabel Allende', 'Pablo Neruda', 'varayac', 'JavaScript' }
+```
+
+<br>
+
+### Modulo 8 - Funciones
 
 - 👷🏽‍♂️ _en desarrollo..._ n.n
   <br>
