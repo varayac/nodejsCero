@@ -317,6 +317,26 @@ const meAndFriendsDataList = [
 const orderByAge = meAndFriendsDataList.sort((a, b) => b.age - a.age) // ...36 ...32 ...27
 ```
 
+3. Crea un archivo llamado fechas.js que contenga las siguientes líneas
+
+- La fecha de hoy
+- La fecha de tu nacimiento
+- Un variable que indique si hoy es más tarde (>) que la fecha de tu nacimiento
+- Una variable que contenga el día de tu nacimiento
+- Una variable que contenga el mes de tu nacimiento (recuerda que Enero es mes 0)
+- Una variable que contenga el año de tu nacimiento (con 4 dígitos)
+
+_**Respuesta:**_
+
+```javascript
+const today = new Date() // 2023-01-04
+const birthday = new Date('12 marzo 1990') // 1990-03-12...
+const compareTodayAndBirthday = today.getTime() > birthday.getTime() // true
+const dayBirthday = birthday.getDate() // 12
+const monthBirthday = birthday.getMonth() // 2 (monts: 0 - 11)
+const yearBirthday = birthday.getFullYear() // 1990
+```
+
 <br>
 
 ### Modulo 8 - Funciones
